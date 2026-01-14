@@ -43,7 +43,7 @@ if not st.session_state.running:
     col1, col2 = st.columns([1, 2])
     with col1:
         st.subheader("가상 시작 시간")
-        virtual_time_input = st.time_input("시험 시작 시간", value=datetime.strptime("10:00", "%H:%M").time(), step=60)
+        virtual_time_input = st.time_input("시험 시작 시간", value=datetime.strptime("10:00", "%H:%M").time(), step=300)
 
     st.subheader("과목 리스트")
     # 데이터 에디터 (엑셀처럼 수정 가능)
